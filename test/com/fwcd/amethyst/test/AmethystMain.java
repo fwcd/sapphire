@@ -17,11 +17,10 @@ import com.fwcd.amethyst.scene.TerrainCollider;
 import com.fwcd.amethyst.utils.RGBColor;
 
 public class AmethystMain {
-	// TODO: Currently at Tutorial 21 - 5:13 min
-	// Next up: Implement terrain normals calculation
+	// TODO: Implement terrain normals calculation
 	
 	public static void main(String[] args) {
-		AmethystApp app = new AmethystApp("Amethyst", 900, 500);
+		AmethystApp app = new AmethystApp("Amethyst", 1280, 720);
 		
 		TerrainSpawner terrain = app.loadTerrain(new RTA(
 				"textures/grass.png",

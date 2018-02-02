@@ -3,8 +3,8 @@ package com.fwcd.amethyst.render;
 import com.fwcd.amethyst.utils.ResourceFile;
 
 public class TerrainShader extends CommonShader {
-	private static final ResourceFile VERTEX_FILE = new ResourceFile("/resources/shaders/terrainVertexShader.txt");
-	private static final ResourceFile FRAGMENT_FILE = new ResourceFile("/resources/shaders/terrainFragmentShader.txt");
+	private static final ResourceFile VERTEX_FILE = new ResourceFile("/resources/shaders/terrainVertexShader.vert");
+	private static final ResourceFile FRAGMENT_FILE = new ResourceFile("/resources/shaders/terrainFragmentShader.frag");
 	
 	private Uniform backgroundTexture;
 	private Uniform rTexture;
