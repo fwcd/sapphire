@@ -60,7 +60,7 @@ public class SceneWindow {
 			attribs.withProfileCore(true);
 			
 			Display.setTitle(title);
-			Display.setIcon(new ByteBuffer[] {loadImage(new ResourceFile("/resources/icons/gemIcon.png"))});
+			Display.setIcon(new ByteBuffer[] {loadImage(new ResourceFile("/icons/gemIcon.png"))});
 			Display.setDisplayMode(new DisplayMode(width, height));
 			Display.create(new PixelFormat(), attribs);
 			

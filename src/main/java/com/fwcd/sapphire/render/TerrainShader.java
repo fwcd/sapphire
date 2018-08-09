@@ -3,8 +3,8 @@ package com.fwcd.sapphire.render;
 import com.fwcd.sapphire.utils.ResourceFile;
 
 public class TerrainShader extends CommonShader {
-	private static final ResourceFile VERTEX_FILE = new ResourceFile("/resources/shaders/terrainVertexShader.vert");
-	private static final ResourceFile FRAGMENT_FILE = new ResourceFile("/resources/shaders/terrainFragmentShader.frag");
+	private static final ResourceFile VERTEX_FILE = new ResourceFile("/shaders/terrainVertexShader.vert");
+	private static final ResourceFile FRAGMENT_FILE = new ResourceFile("/shaders/terrainFragmentShader.frag");
 	
 	private Uniform backgroundTexture;
 	private Uniform rTexture;

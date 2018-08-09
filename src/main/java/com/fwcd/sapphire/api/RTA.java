@@ -29,11 +29,11 @@ public class RTA implements TerrainAsset {
 			String bTexResource,
 			String blendMapResource
 	) {
-		bg = new ResourceFile("/resources/" + bgResource);
-		rTexture = new ResourceFile("/resources/" + rTexResource);
-		gTexture = new ResourceFile("/resources/" + gTexResource);
-		bTexture = new ResourceFile("/resources/" + bTexResource);
-		blendMap = new ResourceFile("/resources/" + blendMapResource);
+		bg = new ResourceFile("/" + bgResource);
+		rTexture = new ResourceFile("/" + rTexResource);
+		gTexture = new ResourceFile("/" + gTexResource);
+		bTexture = new ResourceFile("/" + bTexResource);
+		blendMap = new ResourceFile("/" + blendMapResource);
 		heightMap = null;
 	}
 	
@@ -49,12 +49,12 @@ public class RTA implements TerrainAsset {
 			String blendMapResource,
 			String heightMapResource
 	) {
-		bg = new ResourceFile("/resources/" + bgResource);
-		rTexture = new ResourceFile("/resources/" + rTexResource);
-		gTexture = new ResourceFile("/resources/" + gTexResource);
-		bTexture = new ResourceFile("/resources/" + bTexResource);
-		blendMap = new ResourceFile("/resources/" + blendMapResource);
-		heightMap = new ResourceFile("/resources/" + heightMapResource);
+		bg = new ResourceFile("/" + bgResource);
+		rTexture = new ResourceFile("/" + rTexResource);
+		gTexture = new ResourceFile("/" + gTexResource);
+		bTexture = new ResourceFile("/" + bTexResource);
+		blendMap = new ResourceFile("/" + blendMapResource);
+		heightMap = new ResourceFile("/" + heightMapResource);
 	}
 
 	@Override

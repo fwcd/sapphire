@@ -21,8 +21,8 @@ public class REA implements EntityAsset {
 	 * @param textureResource - The location inside the resource folder inside the jar
 	 */
 	public REA(String modelResource, String textureResource) {
-		model = new ResourceFile("/resources/" + modelResource);
-		texture = new ResourceFile("/resources/" + textureResource);
+		model = new ResourceFile("/" + modelResource);
+		texture = new ResourceFile("/" + textureResource);
 	}
 	
 	@Override
