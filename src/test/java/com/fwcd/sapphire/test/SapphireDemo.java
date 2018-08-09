@@ -1,5 +1,6 @@
 package com.fwcd.sapphire.test;
 
+import org.junit.Test;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.util.vector.Vector3f;
 
@@ -19,7 +20,8 @@ import com.fwcd.sapphire.utils.RGBColor;
 public class SapphireDemo {
 	// TODO: Implement terrain normals calculation
 	
-	public static void main(String[] args) {
+	@Test
+	public void demo() {
 		SapphireApp app = new SapphireApp("Sapphire", 1280, 720);
 		
 		TerrainSpawner terrain = app.loadTerrain(new RTA(

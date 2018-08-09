@@ -1,9 +1,6 @@
 # Sapphire
 A Java/OpenGL 3D game engine featuring a simple and concise API.
 
-## Dependencies
-* LWJGL 2.9.3
-
 ![Screenshot](https://github.com/fwcd/Sapphire/blob/master/screenshot.png?raw=true)
 
 ## Credits
