@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api "org.lwjgl.lwjgl:lwjgl:$lwjglVersion"
+    api "org.lwjgl.lwjgl:lwjgl_util:$lwjglVersion"
+    api "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
+    api "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
+    api "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}

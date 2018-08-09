@@ -1,0 +1,15 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+mainClassName = "com.fwcd.sapphire.SapphireDemo"
+
+dependencies {
+	implementation project(":main")
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}

@@ -1,1 +1,3 @@
 rootProject.name = 'Sapphire'
+
+include 'main', 'demo'
