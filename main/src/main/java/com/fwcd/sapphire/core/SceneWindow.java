@@ -16,6 +16,7 @@ import org.lwjgl.opengl.ContextAttribs;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL20;
 import org.lwjgl.opengl.PixelFormat;
 
 import com.fwcd.sapphire.model.ModelLoader;
@@ -55,14 +56,16 @@ public class SceneWindow {
 	
 	private void runOpenGLThread(String title, int width, int height) {
 		try {
-			ContextAttribs attribs = new ContextAttribs(3, 2);
-			attribs.withForwardCompatible(true);
-			attribs.withProfileCore(true);
+			ContextAttribs attribs = new ContextAttribs(3, 2)
+				.withProfileCore(true)
+				.withForwardCompatible(true);
 			
 			Display.setTitle(title);
 			Display.setIcon(new ByteBuffer[] {loadImage(new ResourceFile("/icons/gemIcon.png"))});
 			Display.setDisplayMode(new DisplayMode(width, height));
 			Display.create(new PixelFormat(), attribs);
+			
+			System.out.println("GLSL Shading Version: " + GL11.glGetString(GL20.GL_SHADING_LANGUAGE_VERSION));
 			
 			shader = new StaticShader();
 			
