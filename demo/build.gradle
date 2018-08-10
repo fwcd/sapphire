@@ -1,19 +1,19 @@
 import com.stehno.gradle.natives.ext.Platform
 
 plugins {
-	id 'java'
-	id 'application'
+    id 'java'
+    id 'application'
     id 'com.stehno.natives' version '0.3.1'
 }
 
 mainClassName = "com.fwcd.sapphire.SapphireDemo"
 
 configurations {
-	lwjglNative
+    lwjglNative
 }
 
 dependencies {
-	implementation project(":main")
+    implementation project(":main")
     lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
     lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
     lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
@@ -27,7 +27,7 @@ natives {
 }
 
 run {
-	systemProperty 'java.library.path', file('build/natives')
+    systemProperty 'java.library.path', file('build/natives')
 }
 
 repositories {
