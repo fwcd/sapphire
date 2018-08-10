@@ -6,3 +6,4 @@ bin
 build
 .vscode
 .gradle
+.DS_Store
