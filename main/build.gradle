@@ -1,13 +1,13 @@
 plugins {
-    id 'java-library'
+	id 'java-library'
 }
 
 dependencies {
-    api "org.lwjgl.lwjgl:lwjgl:$lwjglVersion"
-    api "org.lwjgl.lwjgl:lwjgl_util:$lwjglVersion"
-    testImplementation 'junit:junit:4.12'
+	api "org.lwjgl.lwjgl:lwjgl:$lwjglVersion"
+	api "org.lwjgl.lwjgl:lwjgl_util:$lwjglVersion"
+	testImplementation 'junit:junit:4.12'
 }
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }

@@ -1,37 +1,37 @@
 import com.stehno.gradle.natives.ext.Platform
 
 plugins {
-    id 'java'
-    id 'application'
-    id 'com.stehno.natives' version '0.3.1'
+	id 'java'
+	id 'application'
+	id 'com.stehno.natives' version '0.3.1'
 }
 
 mainClassName = "com.fwcd.sapphire.SapphireDemo"
 
 configurations {
-    lwjglNative
+	lwjglNative
 }
 
 dependencies {
-    implementation project(":main")
-    lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
-    lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
-    lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
-    testImplementation 'junit:junit:4.12'
+	implementation project(":main")
+	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
+	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
+	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
+	testImplementation 'junit:junit:4.12'
 }
 
 natives {
-    configurations = ['lwjglNative']
-    platforms = Platform.all()
-    outputDir = 'natives'
+	configurations = ['lwjglNative']
+	platforms = Platform.all()
+	outputDir = 'natives'
 }
 
 run {
-    systemProperty 'java.library.path', file('build/natives')
+	systemProperty 'java.library.path', file('build/natives')
 }
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 run.dependsOn includeNatives
