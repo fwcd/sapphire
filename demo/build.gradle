@@ -13,7 +13,7 @@ configurations {
 }
 
 dependencies {
-	implementation project(":main")
+	implementation project(':main')
 	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
 	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
 	lwjglNative "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
